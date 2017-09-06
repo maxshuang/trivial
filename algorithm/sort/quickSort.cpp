@@ -1,19 +1,16 @@
 /*
  * quickSort.cpp
  *
- *  Created on: 2017年9月6日
+ *  Created on: 2017骞�9鏈�6鏃�
  *      Author: maxshuang
  */
 
 #include<stdio.h>
 #include <iostream>
 using namespace std;
+#include"quickSort.h"
+#include"common.h"
 
-void QuickSort(int* a,int start,int end);
-void QuickSort(int* a,int n);
-void swap(int*a,int*b);
-int partition(int* a,int start,int end);
-void Print(int* a,int n);
 
 
 void QuickSort(int* a,int start,int end)
@@ -59,22 +56,8 @@ int partition(int* a,int start,int end)
 
 
 
-void Print(int* a,int n)
-{
-	for(int i=0;i<n;++i)
-		cout<<a[i]<<"\t";
-	cout<<endl;
-}
 
 
-int main()
-{
-	int a[10]={1,5,3,4,7,9,2,8,0,6};
-	QuickSort(a,10);
-	//Print(a,10);
-	int b[10]={1,5,3,9,7,9,2,8,0,6};
-	QuickSort(b,10);
-	return 0;
-}
+
 
 
