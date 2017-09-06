@@ -20,7 +20,7 @@
 void new_fail_func()
 {
 	std::cerr<<"new fail!! Not Enough Mem in Heap! Exit!"<<std::endl;
-	//exit(0);
+	exit(0);
 }
 
 std::set_new_handler(new_fail_func);
