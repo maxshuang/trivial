@@ -23,6 +23,7 @@ void new_fail_func()
 	exit(0);
 }
 
+
 std::set_new_handler(new_fail_func);
 
 namespace myString_n
